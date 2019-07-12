@@ -156,3 +156,8 @@
  .testimonial.testimonial-danger .testimonial-you-name{
  color: #D9534F;
  }
+
+ .our-departments {
+     background-image: url(../img/departments-bg.jpg);
+     background-image: repeat-x;
+ }
