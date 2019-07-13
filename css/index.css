@@ -158,6 +158,9 @@
  }
 
  .our-departments {
-     background-image: url(../img/departments-bg.jpg);
-     background-image: repeat-x;
+     background-color: #17a2b8;
+ }
+
+ .info-conteiner ul {
+          list-style-type: none;
  }

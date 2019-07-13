@@ -1,7 +1,16 @@
+/*--
+	Author: W3Layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/*-- Reset-Code --*/
+
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto Condensed', sans-serif;
+
 }
 body a {
 	color:red;
@@ -49,7 +58,7 @@ a:focus, a:hover {
 	text-decoration: none;
 	outline: none;
 }
-
+/*-- //Reset-Code --*/
 
 .w3ls-banner {
     background: url(../img/banner9.jpg) no-repeat;
@@ -336,7 +345,7 @@ span.form-sub-label input[type="text"] {
 }
 .container {
     width: 270px;
-	padding: 15px 5px 15px;
+	padding: 5px 5px 15px;
 }
 .heading h2 {
     font-size: 17px;
@@ -383,3 +392,4 @@ input[type="text"] {
 }
 
 
+/* //respoinsive */
