@@ -1,0 +1,2 @@
+{"clientName":"dima","clientEmail":"grad3r@ex.ua","cart":{"Офтальмолог":3,"Нарколог":1}}
+{"clientName":"da","clientEmail":"dasdas@dads","cart":{"Офтальмолог":3,"Нарколог":1}}
