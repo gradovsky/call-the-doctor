@@ -30,9 +30,8 @@ class Cart {
     let total = 0;
     let cartDomSting = `<div class="container">
                 <div class="row">
-                    <div class="col-5"><strong>Doctor</strong></div>
-                    <div class="col-3"><strong>Price</strong></div>
-                    <div class="col-2"><strong>Quantity</strong></div>
+                    <div class="col-5"><strong>Лікар</strong></div>
+                    <div class="col-3"><strong>Ціна</strong></div>
                 </div>`;
     for (const id in this.cart) {
       const doctor = doctorList.getDoctorById(id);
@@ -40,34 +39,16 @@ class Cart {
       cartDomSting += `<div class="row" data-id="${id}">
                     <div class="col-5">${doctor.title}</div>
                     <div class="col-3">${doctor.price}</div>
-                    <div class="col-2">${this.cart[id]}</div>
-                    <div class="col-1"><button class="btn btn-sm plus">+</button></div>
-                    <div class="col-1"><button class="btn btn-sm minus">-</button></div>
                 </div>`;
     }
     total = total.toFixed(2);
     cartDomSting += `
                 <div class="row">
-                    <div class="col-5"><strong>TOTAL</strong></div>
+                    <div class="col-5"><strong>СУМА</strong></div>
                     <div class="col-3"><strong>$${total}</strong></div>
                 </div>
         </div>`;
     this.cartContainer.find('.cart-doctor-list-container').html(cartDomSting);
-    this.cartContainer
-      .find('.plus')
-      .click(ev => this.changeQuantity(ev, this.addDoctor));
-    this.cartContainer
-      .find('.minus')
-      .click(ev => this.changeQuantity(ev, this.deleteDoctor));
-  }
-  changeQuantity(ev, operation) {
-    const button = $(ev.target);
-    const id = button
-      .parent()
-      .parent()
-      .data('id');
-    operation.call(this, id);
-    this.renderCart();
   }
   updateBadge() {
     $('#cart-badge').text(Object.keys(this.cart).length);
@@ -83,7 +64,7 @@ class Cart {
         },
         body: JSON.stringify({
           clientName: document.querySelector('#client-name').value,
-          clientEmail: document.querySelector('#client-email').value,
+          clientPhone: document.querySelector('#client-phone').value,
           cart: this.cart
         })
       })
@@ -94,12 +75,12 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Thank you! ' + responseText);
+          window.showAlert('Дякуємо, ' + responseText);
           this.cartContainer.modal('hide');
         })
-        .catch(error => showAlert('There is an error: ' + error, true));
+        .catch(error => showAlert('Сталася помилка: ' + error, true));
     } else {
-      window.showAlert('Please fill all fields', false);
+      window.showAlert('Заповніть всі поля', false);
     }
   }
 }

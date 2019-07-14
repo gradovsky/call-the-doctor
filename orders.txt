@@ -1,2 +1,8 @@
 {"clientName":"dima","clientEmail":"grad3r@ex.ua","cart":{"Офтальмолог":3,"Нарколог":1}}
 {"clientName":"da","clientEmail":"dasdas@dads","cart":{"Офтальмолог":3,"Нарколог":1}}
+{"clientName":"фівфів","clientEmail":"qqq@www","cart":{"1":1,"2":1,"3":1}}
+{"clientName":"дмитро","clientEmail":"grad3r@ex.ua","cart":{"1":1,"2":1,"3":1}}
+{"clientName":"dasdas","clientPhone":"432424","cart":{"1":1,"2":1}}
+{"clientName":"d","clientPhone":"2","cart":{}}
+{"clientName":"іавіва","clientPhone":"кукцу","cart":{"1":1,"2":1}}
+{"clientName":"уйцу","clientPhone":"йцуйцу","cart":{"2":1}}

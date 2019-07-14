@@ -12,10 +12,10 @@
 
 
 	<body>
-        <div class="container">
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<img src="img/logo.png" width="100" height="55" alt="company logo">
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<img src="img/logo.png" width="100" height="55" alt="company logo">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,12 +30,14 @@
       <li class="nav-item">
         <a class="nav-link" href="#reviews">Відгуки пацієнтів</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#doctors-list">Обрати лікаря</a>
+      </li>
     </ul>
       <div>
-				<a class="nav-link" href="#cartModal" data-toggle="modal">
-					<!-- <i class="fas fa-shopping-cart"></i> -->
-                        Виклики<span id="cart-badge" class="badge badge-light"></span>
-                </a>
+			<a class="nav-link" href="#cartModal" data-toggle="modal">
+			<span id="cart-badge" class="badge badge-light"></span>
+            </a>
     </div>
   </div>
   </div>
@@ -67,14 +69,10 @@
 <main>
 <section>
     <div class="container">
-            <!-- <h2 id="products">Оберіть лікаря</h2> -->
-            <!-- <div class="container"> -->
-            <div class="row doctors-container">
-               <!-- Products are dynamically generated here -->
-            </div>
+            <div class="row doctors-container" id="doctors-list">
+          </div>
     </div>
 </section>
-<!-- Modal Product Info -->
     <div class="modal fade" id="doctorInfoModal" tabindex="-1" role="dialog" aria-labelledby="doctorInfoLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -85,24 +83,24 @@
             </button>
           </div>
           <div class="modal-body">
-              <img class="card-img-top" src="" alt="">
+              <img class="card-img-top">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary buy" data-id="id">Buy</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+            <button class="btn btn-primary buy" data-id="id">Замовити</button>
           </div>
         </div>
       </div>
     </div>
-        <!-- Modal Cart -->
+
     <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="cartLabel">Cart</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="cartLabel">Оформлення заявок</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Назад">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -112,19 +110,19 @@
             <div class="container">
               <form>
                 <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <label for="client-name" class="col-4 col-form-label">Ваше повне імя:</label>
                   <input class="form-control col-8" type="text" id="client-name" required>
                 </div>
                 <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
-                  <input class="form-control col-8" type="email" id="client-email" required>
+                  <label for="client-email" class="col-4 col-form-label">Ваш номер телефону</label>
+                  <input class="form-control col-8" type="tel" id="client-phone" required>
                 </div>
               </form>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary order">Order</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+            <button class="btn btn-primary order">Замовити</button>
           </div>
         </div>
       </div>
@@ -151,7 +149,7 @@
             У плані даного сайту як сервісу за інформацією - мені сподобався. Це як хотлайн, тільки товари - це лікарі, а магазини - це клініки. Все доступно і зрозуміло.
               </div>
             <div class="testimonial-desc">
-            <img src="img/clients-avatar/Konstantun.png" alt="" />
+            <img src="img/clients-avatar/Konstantun.png" alt="client avatar" />
             <div class="testimonial-you">
             <div class="testimonial-you-name">Костя</div>
             <div class="testimonial-you-designation">Профіль</div>
@@ -163,10 +161,10 @@
             <div class="col-sm-6">
             <div class="testimonial testimonial-primary">
             <div class="testimonial-section">
-                        У мене з сайтом не було ніяких проблем. Добре оформлений, після заявки швидко передзвонили. Через пару днів після прийому дзвонять що б дізнатися, як пройшов мій прийом. Сервісом задоволений.
+            У мене з сайтом не було ніяких проблем. Добре оформлений, після заявки швидко передзвонили. Через пару днів після прийому дзвонять що б дізнатися, як пройшов мій прийом. Сервісом задоволений.
             </div>
             <div class="testimonial-desc">
-            <img src="img/clients-avatar/Sergio.png" alt="" />
+            <img src="img/clients-avatar/Sergio.png" alt="client avatar" />
             <div class="testimonial-you">
             <div class="testimonial-you-name">Сергій</div>
             <div class="testimonial-you-designation">Профіль</div>
@@ -178,9 +176,9 @@
             <div class="col-sm-6">
             <div class="testimonial testimonial-info">
             <div class="testimonial-section">
-                    Свою функцію як онлайн каталог лікарів і клінік він виконує на всі 100. Є з чого вибрати. Рекомендую до вивчення. Чи можна довіряти відгуками? Особисто в моєму випадку вони не підвели коли я шукав собі фахівця в своєму районі.            </div>
+            Свою функцію як онлайн каталог лікарів і клінік він виконує на всі 100. Є з чого вибрати. Рекомендую до вивчення. Чи можна довіряти відгуками? Особисто в моєму випадку вони не підвели коли я шукав собі фахівця в своєму районі.            </div>
             <div class="testimonial-desc">
-            <img src="img/clients-avatar/Yura.png" alt="" />
+            <img src="img/clients-avatar/Yura.png" alt="client avatar" />
             <div class="testimonial-you">
             <div class="testimonial-you-name">Юра</div>
             <div class="testimonial-you-designation">Профіль</div>
@@ -192,8 +190,8 @@
             <div class="col-sm-6">
             <div class="testimonial testimonial-success">
             <div class="testimonial-section">
-Приємне оформлення сайту, хороші представники колцентра. Великий каталог фахівців і клінік. ОЧень допомагають фотографії приміщень клінік. Так хоч знати що вона з себе представляє.            <div class="testimonial-desc">
-            <img src="img/clients-avatar/Daria.png" alt="" />
+            Приємне оформлення сайту, хороші представники колцентра. Великий каталог фахівців і клінік. ОЧень допомагають фотографії приміщень клінік. Так хоч знати що вона з себе представляє.            <div class="testimonial-desc">
+            <img src="img/clients-avatar/Daria.png" alt="client avatar" />
             <div class="testimonial-you">
             <div class="testimonial-you-name">Дарина</div>
             <div class="testimonial-you-designation">Профіль</div>
@@ -205,14 +203,10 @@
             </div>
             </div>
 </main>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-
-    <script async src="js/smooth-scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <script async src="js/alert-window.js"></script>
     <script defer src="js/cart.js"></script>
     <script defer src="js/doctor-list.js"></script>

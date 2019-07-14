@@ -3,7 +3,7 @@ function showAlert(message, success = true) {
     success ? 'alert-success' : 'alert-danger'
   }" role="alert">
           <strong>${message}</strong>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Назад">
                 <span aria-hidden="true">&times;</span>
           </button>
         </div>`;
