@@ -9,12 +9,12 @@ class Cart {
     this.cartContainer.on('show.bs.modal', () => this.renderCart());
     this.cartContainer.find('.order').click(ev => this.order(ev));
   }
-  addProduct(id) {
+  addDoctor(id) {
     this.cart[id] = (this.cart[id] || 0) + 1;
     this.saveCart();
     this.updateBadge();
   }
-  deleteProduct(id) {
+  deleteDoctor(id) {
     if (this.cart[id] > 1) {
       this.cart[id] -= 1;
     } else {
@@ -30,16 +30,16 @@ class Cart {
     let total = 0;
     let cartDomSting = `<div class="container">
                 <div class="row">
-                    <div class="col-5"><strong>Product</strong></div>
+                    <div class="col-5"><strong>Doctor</strong></div>
                     <div class="col-3"><strong>Price</strong></div>
                     <div class="col-2"><strong>Quantity</strong></div>
                 </div>`;
     for (const id in this.cart) {
-      const product = productList.getProductById(id);
-      total += product.price * this.cart[id];
+      const doctor = doctorList.getDoctorById(id);
+      total += doctor.price * this.cart[id];
       cartDomSting += `<div class="row" data-id="${id}">
-                    <div class="col-5">${product.title}</div>
-                    <div class="col-3">${product.price}</div>
+                    <div class="col-5">${doctor.title}</div>
+                    <div class="col-3">${doctor.price}</div>
                     <div class="col-2">${this.cart[id]}</div>
                     <div class="col-1"><button class="btn btn-sm plus">+</button></div>
                     <div class="col-1"><button class="btn btn-sm minus">-</button></div>
@@ -52,13 +52,13 @@ class Cart {
                     <div class="col-3"><strong>$${total}</strong></div>
                 </div>
         </div>`;
-    this.cartContainer.find('.cart-product-list-container').html(cartDomSting);
+    this.cartContainer.find('.cart-doctor-list-container').html(cartDomSting);
     this.cartContainer
       .find('.plus')
-      .click(ev => this.changeQuantity(ev, this.addProduct));
+      .click(ev => this.changeQuantity(ev, this.addDoctor));
     this.cartContainer
       .find('.minus')
-      .click(ev => this.changeQuantity(ev, this.deleteProduct));
+      .click(ev => this.changeQuantity(ev, this.deleteDoctor));
   }
   changeQuantity(ev, operation) {
     const button = $(ev.target);

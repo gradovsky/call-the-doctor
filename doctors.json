@@ -3,57 +3,57 @@
         "id": "Нарколог",
         "title": "Єгор Крутоголов",
         "image": "narcologist.jpg",
-        "description": "Відпускає без рецепта",
+        "description": "",
         "price": 100
     },
     {
         "id": "Офтальмолог",
-        "title": "Сергій Валерійович Зозуля",
+        "title": "Петро Валерійович Зозуля",
         "image": "doc.jpeg",
-        "description": "Вспишка зправа",
+        "description": "",
         "price": 350
 
-    },
-    {
-        "id": "Самопоміч",
-        "title": "Аптечка АІ-2",
-        "image": "first-aid-kit.jpg",
-        "description": "Масти собі голову",
-        "price": 299
     },
     {
         "id": "Паталогоанатом",
         "title": "Роман Петрович Старокінь",
         "image": "traumatologist.jpg",
-        "description": "Ну той мертвого не підніме",
+        "description": "",
         "price": 500
     },
     {
-        "id": "Травматолог",
+        "id": "Терапевт",
         "title": "Андрій Павлович Борис",
         "image": "preobrazensky.jpg",
-        "description": "Складе з двох купок в одну",
+        "description": "",
         "price": 999
     },
     {
         "id": "Стоматолог",
         "title": "Андрій Богданович Нагірний",
         "image": "dentist.jpg",
-        "description": "Заявих зубів не буває",
+        "description": "",
         "price": 300
     },
     {
         "id": "Хірург",
         "title": "Олег Петрович Бойко",
         "image": "surgeon.jpg",
-        "description": "Руки тресуться, може відрізати щось зайве",
+        "description": "",
         "price": 600
     },
     {
         "id": "Ортопед",
         "title": "Василь Михайлович Шкільний",
         "image": "orthopaedist.jpg",
-        "description": "Мертвого підніме",
+        "description": "",
         "price": 50
+    },
+    {
+        "id": "Самопоміч",
+        "title": "Аптечка АІ-2",
+        "image": "first-aid-kit.jpg",
+        "description": "Врятуй себе сам",
+        "price": 299
     }
 ]

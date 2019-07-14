@@ -12,40 +12,35 @@
 
 
 	<body>
+        <div class="container">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">Navbar</a>
+				<img src="img/logo.png" width="100" height="55" alt="company logo">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div>
-				<a class="nav-link" href="#cartModal" data-toggle="modal">
-					<i class="fas fa-shopping-cart"></i>
-                        Cart<span id="cart-badge" class="badge badge-light"></span>
-                    </a>
-                </div>
-
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">На головну <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#about">Про нас</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#reviews">Відгуки пацієнтів</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+      <div>
+				<a class="nav-link" href="#cartModal" data-toggle="modal">
+					<!-- <i class="fas fa-shopping-cart"></i> -->
+                        Виклики<span id="cart-badge" class="badge badge-light"></span>
+                </a>
+    </div>
   </div>
-</nav>
+  </div>
+  </nav>
+  <div class="container">
 		            <div id="medicineCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 		            <div class="carousel-inner">
 		                <div class="carousel-item active">
@@ -67,20 +62,24 @@
 		                <span class="sr-only">Next</span>
 		            </a>
 		            </div>
+  </div>
 		</header>
 <main>
 <section>
-            <h2 id="products">Оберіть лікаря</h2>
-            <div class="row products-container">
-               <!--Products are dynamically generated here-->
+    <div class="container">
+            <!-- <h2 id="products">Оберіть лікаря</h2> -->
+            <!-- <div class="container"> -->
+            <div class="row doctors-container">
+               <!-- Products are dynamically generated here -->
             </div>
+    </div>
 </section>
 <!-- Modal Product Info -->
-    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal fade" id="doctorInfoModal" tabindex="-1" role="dialog" aria-labelledby="doctorInfoLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <h5 class="modal-title" id="doctorInfoLabel">Doctor Info</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -97,8 +96,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal Cart -->
+        <!-- Modal Cart -->
     <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -109,7 +107,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="cart-product-list-container"></div>
+            <div class="cart-doctor-list-container"></div>
             <hr>
             <div class="container">
               <form>
@@ -131,21 +129,7 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
+ <div class="container" id="about">
           <h2>Про нас</h2>
           <p class="lead">Cервіс, за допомогою якого пошук лікаря, виклик його на будинок або запис на прийом. Консультації стали неймовірно простими завданнями, тепер записатися до лікаря легко і швидко.</p>
          <div class="info-conteiner">
@@ -208,8 +192,7 @@
             <div class="col-sm-6">
             <div class="testimonial testimonial-success">
             <div class="testimonial-section">
-                    Сервис полезный. Приятное оформление сайта, хорошие представители колцентра. Большой каталог специалистов и клиник. ОЧень помогают фотографии помещений клиник. Так хоть знать что она из себя представляет.            </div>
-            <div class="testimonial-desc">
+Приємне оформлення сайту, хороші представники колцентра. Великий каталог фахівців і клінік. ОЧень допомагають фотографії приміщень клінік. Так хоч знати що вона з себе представляє.            <div class="testimonial-desc">
             <img src="img/clients-avatar/Daria.png" alt="" />
             <div class="testimonial-you">
             <div class="testimonial-you-name">Дарина</div>
@@ -221,8 +204,6 @@
             </div>
             </div>
             </div>
-
-
 </main>
 
 
@@ -234,7 +215,7 @@
     <script async src="js/smooth-scroll.js"></script>
     <script async src="js/alert-window.js"></script>
     <script defer src="js/cart.js"></script>
-    <script defer src="js/product-list.js"></script>
+    <script defer src="js/doctor-list.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 </html>

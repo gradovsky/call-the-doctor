@@ -1,6 +1,6 @@
 const cart = new Cart($('#cartModal'));
-const productList = new ProductList(
-  'products.json',
-  $('.products-container'),
+const doctorList = new DoctorList(
+  'doctors.json',
+  $('.doctors-container'),
   cart
 );
