@@ -45,7 +45,7 @@ class Cart {
     cartDomSting += `
                 <div class="row">
                     <div class="col-5"><strong>СУМА</strong></div>
-                    <div class="col-3"><strong>$${total}</strong></div>
+                    <div class="col-3"><strong>₴${total}</strong></div>
                 </div>
         </div>`;
     this.cartContainer.find('.cart-doctor-list-container').html(cartDomSting);
